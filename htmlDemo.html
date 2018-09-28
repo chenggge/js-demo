@@ -1,13 +1,17 @@
+<!DOCTYPE HTML>
 <html>
 <head>
     <title>HyperText Mark-up Language（超文本标记语言）</title>
-    <style>
+    <style type="text/css">
+        h1 {font-size:30px; font-family:宋体;}
+        h2 {font-size:15px; font-family:黑体;}
+        p {font-size:8px; font-family:"隶书";}
         table tr td { width: 75px;height: 40px;border: none;text-align: center; }  
     </style>
 </head>
 
 <body>
-    <h1 id="heading1">这里用来展示html中的一些标签</h1>
+    <h1 id="heading1">learn html</h1>
     <br />
     <h2>标题</h2>
     <hr />
@@ -357,6 +361,90 @@ chinahtml.com 之前，不必先去浏览MSN.com。</li>
     <h4>邮件链接--打开email程序</h4>
     <a href="mailto:nobody@chinahtml.com">给nobody@chinahtml.com 发电子邮件</a>
     <h4>为链接设置标题</h4>
-    <a href="http://www.chinahtml.com/" title="上chinahtml.com 网站学习HTML" alt="一些信息">chinahtml.com</a>
+    <a href="http://www.chinahtml.com/" title="上chinahtml.com 网站学习HTML">chinahtml.com</a>
+    
+    <h2>图像</h2>
+    <img src="david.jpg" alt="David" width="32" height="32"/>
+    <ul>
+        <li>GIF（Graphics Interchange Format，图形交换格式）</li>
+        <li>JPG 或JPEG（Joint Photographic Experts Group，联合图像专家组）</li>
+        <li>PNG（Portable Network Graphics，可移植网络图像）</li>
+    </ul>
+    <p><b>alt 属性用于给出图像的替用描述，假如由于某些原因该图像未能显示出来，浏览器就通过
+显示这个描述来替代图像。对于有视力障碍的人士来说，或者当网页打开很慢的时候，这一
+特性显得尤为重要。所以说，始终记得写alt 属性：</b></p>
+    
+    <h2>表格</h2>
+    <ul>
+        <li><b>border</b>: 用于指定表格四周边框的厚度</li>
+        <li><b>align</b>：指定整个表格、某行或某个单元格里内容的水平对齐方式，比如左对齐、居中或右对齐。</li>
+        <li><b>valign</b>：指定某个单元格里内容的垂直对齐方式，比如靠上、置中或靠下。</li>
+        <li><b>colspan</b>：是“column span（跨列）”的缩写。colspa n 属性用在<td>标签中，用来指定单元格横
+向跨越的列数。</li>
+        <li><b>rowspan</b>：指定单元格纵向跨越的行数。</li>
+    </ul>
+    <table border="1">
+        <tr>
+            <td colspan="3">单元格1</td>
+        </tr>
+        <tr>
+            <td>单元格2</td>
+            <td>单元格3</td>
+            <td>单元格4</td>
+        </tr>
+    </table>
+    <br />
+    <table border="1">
+        <tr>
+            <td rowspan="3">单元格1</td>
+            <td>单元格2</td>
+        </tr>
+        <tr>
+            <td>单元格3</td>
+        </tr>
+        <tr>
+            <td>单元格4</td>
+        </tr>
+    </table>
+    
+    <h2>上传网页</h2>
+    TO FIX
+    
+    <h2>验证你的网页</h2>
+    <a href="validator.w3.org" title=""W3C 的免费验证器（validator）>W3C 的免费验证器（validator）</a>
+    
+    <h2>通过文档类型声明向别人透露 HTML的版本信息</h2>
+    <!--<!DOCTYPE html PUBLIC"-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+    <html xmlns="http://www.w3.org/1999/xhtml" lang="en">-->
+        
+    <h2>总结</h2>
+    <ul>
+        <li>首先，在HTML 文档中，应保持正确的顺序与结构。令你的HTML 文档具有良好
+的顺序与结构，不仅可以展示你的HTML 技能，而且也方便自己阅读。</li>
+        <li>遵循标准，并且坚持验证网页。值得反复强调的是：确保编写纯正的XHTML，采
+用文档类型声明，并在<a href="validator.w3.org">validator.w3c.org</a> 上验证网页。</li>
+        <li>丰富网页的内容。记住，HTML 只是为你提供在因特网上展示信息的途径，而具体
+信息应由你来提供。尽管漂亮的页面令人赏心悦目，但大多数人希望在因特网上获得有
+用的信息。</li>
+        <li>避免在网页里嵌入过多图片等花哨的东西。它们会降低网页的打开速度，并且有可
+能令浏览者感到不知所措。如果一个网页的打开时间超过20秒，那么它将失去高达50％
+的访问者。</li>
+        <li>记得把你的网站加入到搜索引擎/目录里，这样可以让更多人找到并欣赏你的网站。
+一般来说，你可以在各大搜索引擎（最主要的是Google，不过也有其它的，比如DMOZ、
+Yahoo、AltaVista、AlltheWeb 和Lycos 等）首页找到登录网站的链接。</li>
+        <li>在本教程中，你已经学会使用记事本来编辑HTML，它是一个简单易用的编辑器。
+不过也许你会发现使用更高级的编辑器更有助于编写HTML，因为它们能够提供较好的
+视图和更多的功能。你可以从Download.com 网站上找到对不同编辑器的简要介绍及评论。</li>
+    </ul>
+        
+    <h2>如何进一步学习</h2>
+    <ol>
+        <li>研究别人的网站，你可以通过“查
+看源文件”（在浏览器的菜单栏上点击“查看”，然后选择“源文件”）来了解别人的网页是如
+何编写的。</li>
+        <li>在因特网上搜索HTML 的示例与文章。网上有许多站点都有非常好的HTML 内容。</li>
+        <li>在众多网上讨论版上学习并提问。两个最好的去处是：Newsgroups和Experts Exchange。
+在那里，你会遇到真正的专家，并能从他们那里学到很多东西。</li>
+    </ol>
 </body>
 </html>
