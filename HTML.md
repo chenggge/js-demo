@@ -123,7 +123,7 @@ ul.inventory{ list-style:disc url(/images/common/lister2.gig) inside;}
 
 #### XHTML代码规范
 ##### 1.所有的标记都必须要有一个相应的结束标记
-以前在HTML中，你可以打开许多标签，例如<p>和<li>而不一定写对应的</p>和</li>来关闭它们。但在XHTML中这是不合法的。XHTML要求有严谨的结构，所有标签必须关闭。如果是单独不成对的标签，在标签最后加一个"/"来关闭它。例如: 
+以前在HTML中，你可以打开许多标签，例如```<p>```和```<li>```而不一定写对应的```</p>```和```</li>```来关闭它们。但在XHTML中这是不合法的。XHTML要求有严谨的结构，所有标签必须关闭。如果是单独不成对的标签，在标签最后加一个"/"来关闭它。例如: 
 ```<br /><img height="80" alt="网页设计师" src="../images/logo_w3cn_200x80.gif" width="200" />```
 
 ##### 2.所有标签的元素和属性的名字都必须使用小写
@@ -143,10 +143,7 @@ ul.inventory{ list-style:disc url(/images/common/lister2.gig) inside;}
 
 ##### 6.给所有属性赋一个值
 XHTML规定所有属性都必须有一个值，没有值的就重复本身。例如： 
-```
-<td nowrap> 
-    <input type="checkbox" name="shirt" value="medium" checked>
-```
+```<td nowrap> <input type="checkbox" name="shirt" value="medium" checked>```
 必须修改为： ```<td nowrap="nowrap"> <input type="checkbox" name="shirt" value="medium" checked="checked">```
 
 ##### 7.不要在注释内容中使“--”
