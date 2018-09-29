@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+	<meta http-equiv="Content-Language" content="gb2312" />
+	<meta content="all" name="robots" />
+	<meta name="author" content="chengge" />
+	<meta name="Copyright" content="chengge" />
+	<meta name="description" content="Div居中Demo" />
+	<meta name="keywords" content="div center 水平垂直居中" />
+	<link rel="icon" href="/bg1.png" type="image/x-icon" />
+	<link rel="shortcut icon" href="http://www.w3cn.org/favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" rev="stylesheet" href="css/style01.css" type="text/css" media="all" />
+	<style>
+		html, body, * {
+			margin: 0 auto;
+			padding: 0;
+			border: none;
+			width: 100%;
+			height: 100%;
+			font-family : "Lucida Grande", Verdana, Lucida, Arial, Helvetica, 宋体,sans-serif;
+			color: #666;
+			font-size:12px;
+			line-height:1.5;
+			position:relative;
+		}
+		#center {
+			width: 400px;
+			height: 400px;
+			padding: 10px 10px 10px 10px;
+			background: url(./bg1.png) #FEFEFE no-repeat center center;
+			border: 3px solid #333;
+			/*实际效果等价
+			position: relative;
+			top: 50%;
+			transform: translateY(-50%);*/
+			top: 50%;
+			position:absolute;
+			transform: translate(-50%, -50%);
+			left: 50%;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="center">这里是内容区域这里是内容区域这里是内容区域这里是内容区域这里是内容区域这里是内容区域这里是内容区域这里是内容区域这里是内容区域这里是内容区域这里是内容区域这里是内容区域</div>
+</body>
+</html>
