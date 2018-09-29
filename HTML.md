@@ -27,3 +27,18 @@ XHTML是The Extensible HyperText Markup Language可扩展标识语言的缩写�
 ##### (1)结构化id标签，与class的有区别： 如果你的属性页面包含了一个div，它的id为"content",它就不可能有另外一个div或者其他元素拥有相同的名字。相反，class属性可以在意个页面中一次又一次地使用。
 ##### (2)id的规则 一个id值必须用一个字母或者下划线开头，它不能用一个数字进行开头，然后跟随字母、数字和下划线。空格和连字符-都是不允许的。
 #### (11）制作好的网站可以到w3c进行标准校正 http:validator.w3.org http://jigsaw.w3.org/css-validator/
+#### (12)meta标签设置技巧
+##### 收藏夹图标
+``` <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" /> ```
+##### 为搜索引擎准备的配置
+* 允许搜索机器人搜索站内所有链接。如果你想某些页面不被搜索，推荐采用robots.txt方法
+``` <meta content="all" name="robots" /> ```
+* 设置站点作者信息
+``` <meta name="author" content="ajie@netease.com,阿捷" />  ```
+* 设置站点版权信息
+``` <meta name="Copyright" content="www.w3cn.org,自由版权,任意转载" /> ```
+* 站点的简要介绍(推荐)
+``` <meta name="description" content="新网页设计师。web标准的教程站点，推动web标准在中国的应用" /> ```
+* 站点的关键词(推荐)
+``` <meta content="designing, with, web, standards, xhtml, css, graphic, design, layout, usability, ccessibility, w3c, w3, w3cn, ajie" name="keywords" /> ```
