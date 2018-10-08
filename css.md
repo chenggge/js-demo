@@ -1,6 +1,6 @@
 # 以下为于页面模块的常用命名
 
-头：header
+* 头：header
 内容：content/container
 尾：footer
 导航：nav
