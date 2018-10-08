@@ -85,3 +85,23 @@
 * ·tt - 电传文本
 * ·u - 下划线
 * ·var - 定义变量
+
+# IE6 双倍边距BUG
+
+只要满足下面3 个条件才会出现这个BUG:
+* 1）要为块状元素；
+* 2）要左侧浮动；
+* 3）要有左外边距(margin-left)；
+解决这个BUG 很容易，只需要在相应的块状元素的CSS 树形中加入“display:inline;”，
+代码如下：
+```
+#redBlock{
+width:200px;
+height:200px;
+background:#900;
+margin-top:20px;
+margin-left:20px;
+float:left;
+display:inline;
+}
+```
